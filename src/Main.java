@@ -18,6 +18,12 @@ public class Main {
 		map.put(1222, "Luca");
 		map.replace(1224, "Jose");
 		System.out.println("Map after modifying: " + map);
+
+		if (map.containsKey(1224))
+			System.out.println("Value with key = 1224: " + map.get(1224));
+
+		map.remove(1225);
+		System.out.println("Map after removing key = 1225: " + map);
 	}
 
 }
